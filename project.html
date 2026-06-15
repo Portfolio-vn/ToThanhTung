@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duino-Coin Trading Platform | To Thanh Tung</title>
+  <meta name="description" content="Duino-Coin Trading Platform project page by To Thanh Tung." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="project-page">
+  <header class="site-header project-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">TT</span>
+      <span><b>To Thanh Tung</b><small>Back to Portfolio</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#videos">Videos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero" id="dashboard">
+      <div class="project-title reveal">
+        <p class="eyebrow">Personal Project · 2025</p>
+        <h1>Duino-Coin Trading Platform</h1>
+        <p>Interactive FinTech dashboard preserved from the original project direction. The page presents the DUCO wallet interface, ESP32 mining system evidence, clean project files and enlarged presentation videos.</p>
+        <div class="project-tags"><span>ESP32</span><span>MIT App Inventor</span><span>DUCO API</span><span>IoT</span><span>Blockchain Education</span></div>
+      </div>
+
+      <div class="trade-terminal reveal delay-1">
+        <aside class="terminal-side">
+          <div class="terminal-logo">DUCO</div>
+          <div class="terminal-user"><span>TT</span><b>To Thanh Tung</b><small>Miner Node</small></div>
+          <button class="side-item active"><i class="fa-solid fa-chart-line"></i> Dashboard</button>
+          <button class="side-item"><i class="fa-solid fa-wallet"></i> Wallet</button>
+          <button class="side-item"><i class="fa-solid fa-clock-rotate-left"></i> Ledger</button>
+          <button class="side-item"><i class="fa-solid fa-file-lines"></i> Report</button>
+        </aside>
+        <section class="terminal-main">
+          <div class="terminal-top"><span>DUINO-COIN MINING SYSTEM</span><b><i class="fa-solid fa-circle"></i> Live demo</b></div>
+          <div class="wallet-grid">
+            <div class="wallet-card"><span>Wallet Balance</span><b id="balanceVal">1240.50</b><small>DUCO</small></div>
+            <div class="wallet-card"><span>Hash Rate</span><b id="hashVal">503</b><small>H/s avg</small></div>
+            <div class="wallet-card"><span>Share Acceptance</span><b>97.97%</b><small>GOOD shares</small></div>
+            <div class="wallet-card"><span>API Status</span><b>99.2%</b><small>success rate</small></div>
+          </div>
+          <div class="chart-panel">
+            <canvas id="tradeChart" width="900" height="320"></canvas>
+          </div>
+          <div class="trade-controls">
+            <button class="trade-btn buy" id="buyBtn"><i class="fa-solid fa-arrow-trend-up"></i> Simulate Buy</button>
+            <button class="trade-btn sell" id="sellBtn"><i class="fa-solid fa-arrow-trend-down"></i> Simulate Sell</button>
+            <button class="trade-btn reset" id="resetBtn"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+          </div>
+          <div class="ledger" id="ledgerBox"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section project-summary reveal">
+      <div class="summary-card">
+        <p class="eyebrow">Project Overview</p>
+        <h2>Duino-Coin Mining System & App Dashboard</h2>
+        <p>The system combines a low-cost ESP32 mining device with a mobile dashboard built for wallet visualization, exchange-rate monitoring and educational blockchain experimentation.</p>
+      </div>
+      <div class="summary-grid">
+        <div><i class="fa-solid fa-microchip"></i><b>Embedded Miner</b><span>ESP32 device connected through Wi-Fi and TCP communication.</span></div>
+        <div><i class="fa-solid fa-mobile-screen-button"></i><b>Mobile Dashboard</b><span>MIT App Inventor interface for wallet and value monitoring.</span></div>
+        <div><i class="fa-solid fa-chart-simple"></i><b>Performance Evidence</b><span>Report previews show chart and experiment pages outside.</span></div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section evidence-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Project Evidence</p>
+        <h2>Images and files</h2>
+        <p>Selected project photos, poster file and report file are displayed with clean English names.</p>
+      </div>
+      <div class="evidence-grid reveal" id="projectEvidence"></div>
+    </section>
+
+
+    <section id="videos" class="section video-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Presentation Videos</p>
+        <h2>Project presentation videos</h2>
+        <p>Three Google Drive presentation links are embedded for direct review.</p>
+      </div>
+      <div class="video-grid reveal" id="videoGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer project-footer"><a href="index.html">← Back to Portfolio</a></footer>
+
+  <div class="modal" id="mediaModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
